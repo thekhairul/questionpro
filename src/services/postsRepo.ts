@@ -1,11 +1,11 @@
-import apiClient from '@/services/apiClient';
 import type { Post } from '@/types/posts';
+import apiClient from './apiClient';
 
 const postsRepo = {
-  getPosts: async (userId?: number) => {
+  getPosts: async (userId?: number | null) => {
     const response = await apiClient.get<Post[]>('/posts', {
       params: {
-        userId,
+        userId: userId ?? undefined,
       },
     });
     return response.data;
