@@ -24,10 +24,11 @@
     "noUncheckedSideEffectImports": true,
 
     /* Path mapping */
-    "baseUrl": "./src",
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["*"]
-    }
+      "@/*": ["./src/*"]
+    },
+    "types": ["node"]
   },
   "include": ["src"]
 }
