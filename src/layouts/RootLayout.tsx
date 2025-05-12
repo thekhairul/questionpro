@@ -30,10 +30,11 @@ const RootLayout: React.FC = () => {
         </nav>
       </header>
       <section className="flex justify-between gap-4">
-        <main className="flex-grow">
+        <main className="flex-1">
           <Outlet />
         </main>
-        <aside>
+        <div className="hidden md:block w-96"></div>
+        <aside className="flex-shrink-0 w-64">
           <div className="p-4 bg-gray-100 rounded-md">
             <h2 className="text-lg font-semibold">Sidebar</h2>
             <p>This is the sidebar content.</p>

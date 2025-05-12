@@ -8,7 +8,7 @@ const links = [
 const DashboardLayout: React.FC = () => {
   return (
     <div>
-      <nav className="mb-6">
+      <nav className="mb-8">
         <ul className="flex gap-4">
           {links.map((link) => (
             <li key={link.to}>

@@ -1,10 +1,11 @@
 import apiClient from "./apiClient";
 
 const commentsRepo = {
-    getComments: async () => {
-        const response = await apiClient.get("/comments");
-        return response.data;
-    },
+  getComments: async (postId?: number) => {
+    const url = postId ? `/posts/${postId}/comments` : '/comments';
+    const response = await apiClient.get(url);
+    return response.data;
+  },
 };
 
 export default commentsRepo;
