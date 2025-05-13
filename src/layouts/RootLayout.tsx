@@ -9,7 +9,7 @@ const links = [
 
 const RootLayout: React.FC = () => {
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto p-4">
       <header className="py-4">
         <nav className="py-2 border-b border-gray-300">
           <ul className="flex gap-4">
@@ -30,7 +30,7 @@ const RootLayout: React.FC = () => {
           </ul>
         </nav>
       </header>
-      <section className="flex justify-between gap-4">
+      <section className="flex flex-wrap justify-between gap-4">
         <main className="flex-1">
           <Outlet />
         </main>
