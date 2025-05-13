@@ -1,3 +1,4 @@
+import User from '@/components/User';
 import { NavLink, Outlet } from 'react-router';
 
 const links = [
@@ -35,9 +36,8 @@ const RootLayout: React.FC = () => {
         </main>
         <div className="hidden md:block w-96"></div>
         <aside className="flex-shrink-0 w-64">
-          <div className="p-4 bg-gray-100 rounded-md">
-            <h2 className="text-lg font-semibold">Sidebar</h2>
-            <p>This is the sidebar content.</p>
+          <div className="sticky top-0 p-4 bg-gray-200 rounded-md shadow-md">
+            <User />
           </div>
         </aside>
       </section>
