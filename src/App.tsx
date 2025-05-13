@@ -1,6 +1,7 @@
 import DashboardLayout from "@/layouts/DashboardLayout";
 import RootLayout from "@/layouts/RootLayout";
 import Comments from "@/pages/Comments";
+import Component from '@/pages/Component';
 import Dashboard from "@/pages/Dashboard";
 import Home from "@/pages/Home";
 import Posts from "@/pages/Posts";
@@ -18,6 +19,7 @@ function App() {
             <Route path="posts" element={<Posts />} />
             <Route path="comments" element={<Comments />} />
           </Route>
+          <Route path="component" element={<Component />} />
           <Route path="user" element={<Profile />} />
         </Route>
         <Route path="*" element={<div>404 Not Found</div>} />

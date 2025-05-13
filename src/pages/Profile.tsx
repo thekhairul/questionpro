@@ -19,7 +19,7 @@ function Profile() {
           Name
         </label>
         <MyInput
-          placeholder="Name"
+          type="text"
           id="name"
           value={state.name}
           onChange={handleName}
@@ -30,7 +30,7 @@ function Profile() {
           Email
         </label>
         <MyInput
-          placeholder="Email"
+          type="email"
           id="email"
           value={state.email}
           onChange={handleEmail}
